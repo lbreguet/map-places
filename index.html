@@ -2,8 +2,13 @@
 <html>
 
 <head>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
   <title>Map Places</title>
-  <script src="map.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSQ8d_4_wKyhHCO6I68aSBSYQ-lAXodao&callback=initMap&libraries=places,visualization" async defer></script>
+  <script src='map.js'></script>
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+
 </head>
 
 <body>
@@ -13,7 +18,8 @@
   <div class='table'>
   </div>
 
-  <div id='map'>
+  <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+  <div id='map' class="map">
   </div>
 
 </body>
