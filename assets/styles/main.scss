@@ -1,11 +1,13 @@
+$white: #fff;
+$shadow: rgba(0, 0, 0, .3);
+$sky-blue: #4d90fe;
+
 #map {
   height: 100%;
 }
 
-
-/* Optional: Makes the sample page fill the window. */
-
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -30,19 +32,19 @@ html, body {
 }
 
 .pac-card {
-  margin: 10px 10px 0 0;
+  background-color: $white;
   border-radius: 2px 0 0 2px;
-  box-sizing: border-box;
+  box-shadow: 0 2px 6px $shadow;
   -moz-box-sizing: border-box;
-  outline: none;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-  background-color: #fff;
+  box-sizing: border-box;
   font-family: Roboto;
+  margin: 10px 10px 0 0;
+  outline: none;
 }
 
 #pac-container {
-  padding-bottom: 12px;
   margin-right: 12px;
+  padding-bottom: 12px;
 }
 
 .pac-controls {
@@ -57,7 +59,7 @@ html, body {
 }
 
 #pac-input {
-  background-color: #fff;
+  background-color: $white;
   font-family: Roboto;
   font-size: 15px;
   font-weight: 300;
@@ -68,12 +70,12 @@ html, body {
 }
 
 #pac-input:focus {
-  border-color: #4d90fe;
+  border-color: $sky-blue;
 }
 
 #title {
-  color: #fff;
-  background-color: #4d90fe;
+  background-color: $sky-blue;
+  color: $white;
   font-size: 25px;
   font-weight: 500;
   padding: 6px 12px;
