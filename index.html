@@ -6,8 +6,11 @@
   <meta charset="utf-8">
   <link rel="shortcut icon" type="image/x-icon" href="assets/img/map-pin.ico">
   <title>Map Places</title>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSQ8d_4_wKyhHCO6I68aSBSYQ-lAXodao&callback=initAutocomplete&libraries=places" async defer></script>
-  <script src='dist/scripts/all.min.js'></script>
+  <script src='node_modules/underscore/underscore-min.js'></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src='http://backbonejs.org/backbone-min.js'></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSQ8d_4_wKyhHCO6I68aSBSYQ-lAXodao" async defer></script>
+  <script src='assets/scripts/place.js'></script>
   <link href="dist/styles/main.css" rel="stylesheet" type="text/css">
 
 </head>
@@ -16,12 +19,9 @@
 
   <h1>Map Places</h1>
 
-  <div class='table'>
-  </div>
-
   <input id="pac-input" class="controls" type="text" placeholder="Search Box">
-  <div id='map' class="map">
-  </div>
+
+  <div id='map' class='map'></div>
 
 </body>
 
